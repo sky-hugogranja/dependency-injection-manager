@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FB9ECEF2A2F6D5A00E0C317 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9ECEE2A2F6D5A00E0C317 /* main.swift */; };
+		2FB9ECF52A2F6D7E00E0C317 /* Benchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB9ECF42A2F6D7E00E0C317 /* Benchmark */; };
+		2FB9ECF72A2F6DCA00E0C317 /* MyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9ECF62A2F6DCA00E0C317 /* MyProtocol.swift */; };
+		2FB9ECF92A2F6DE200E0C317 /* MyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9ECF82A2F6DE200E0C317 /* MyImpl.swift */; };
+		2FB9ECFB2A2F6E3700E0C317 /* Benchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB9ECFA2A2F6E3700E0C317 /* Benchmark */; };
+		2FB9ECFD2A2F6E4700E0C317 /* DI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB9ECFC2A2F6E4700E0C317 /* DI */; };
 		B87574BF2A1E078300BCC732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87574BE2A1E078300BCC732 /* AppDelegate.swift */; };
 		B87574C12A1E078300BCC732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87574C02A1E078300BCC732 /* SceneDelegate.swift */; };
 		B87574C32A1E078300BCC732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87574C22A1E078300BCC732 /* ViewController.swift */; };
@@ -39,7 +45,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2FB9ECEA2A2F6D5A00E0C317 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2FB9ECEC2A2F6D5A00E0C317 /* BenchmarkTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BenchmarkTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB9ECEE2A2F6D5A00E0C317 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2FB9ECF62A2F6DCA00E0C317 /* MyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProtocol.swift; sourceTree = "<group>"; };
+		2FB9ECF82A2F6DE200E0C317 /* MyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImpl.swift; sourceTree = "<group>"; };
 		B87574BB2A1E078300BCC732 /* TestingGrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingGrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87574BE2A1E078300BCC732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B87574C02A1E078300BCC732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +78,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2FB9ECE92A2F6D5A00E0C317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB9ECFB2A2F6E3700E0C317 /* Benchmark in Frameworks */,
+				2FB9ECFD2A2F6E4700E0C317 /* DI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B87574B82A1E078300BCC732 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +95,7 @@
 				B89FF1002A21068C0073E600 /* FeatureImpl in Frameworks */,
 				B89FF1022A21068C0073E600 /* Log in Frameworks */,
 				B89FF0FA2A21068C0073E600 /* Core in Frameworks */,
+				2FB9ECF52A2F6D7E00E0C317 /* Benchmark in Frameworks */,
 				B89FF0FC2A21068C0073E600 /* DI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +117,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FB9ECED2A2F6D5A00E0C317 /* BenchmarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FB9ECEE2A2F6D5A00E0C317 /* main.swift */,
+				2FB9ECF62A2F6DCA00E0C317 /* MyProtocol.swift */,
+				2FB9ECF82A2F6DE200E0C317 /* MyImpl.swift */,
+			);
+			path = BenchmarkTests;
+			sourceTree = "<group>";
+		};
 		B87574B22A1E078300BCC732 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +134,7 @@
 				B87574BD2A1E078300BCC732 /* TestingGrounds */,
 				B87574D42A1E078500BCC732 /* TestingGroundsTests */,
 				B87574DE2A1E078500BCC732 /* TestingGroundsUITests */,
+				2FB9ECED2A2F6D5A00E0C317 /* BenchmarkTests */,
 				B87574BC2A1E078300BCC732 /* Products */,
 				B87574F72A1E0ADF00BCC732 /* Frameworks */,
 			);
@@ -103,6 +146,7 @@
 				B87574BB2A1E078300BCC732 /* TestingGrounds.app */,
 				B87574D12A1E078500BCC732 /* TestingGroundsTests.xctest */,
 				B87574DB2A1E078500BCC732 /* TestingGroundsUITests.xctest */,
+				2FB9ECEC2A2F6D5A00E0C317 /* BenchmarkTests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +191,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2FB9ECEB2A2F6D5A00E0C317 /* BenchmarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FB9ECF22A2F6D5A00E0C317 /* Build configuration list for PBXNativeTarget "BenchmarkTests" */;
+			buildPhases = (
+				2FB9ECE82A2F6D5A00E0C317 /* Sources */,
+				2FB9ECE92A2F6D5A00E0C317 /* Frameworks */,
+				2FB9ECEA2A2F6D5A00E0C317 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BenchmarkTests;
+			packageProductDependencies = (
+				2FB9ECFA2A2F6E3700E0C317 /* Benchmark */,
+				2FB9ECFC2A2F6E4700E0C317 /* DI */,
+			);
+			productName = BenchmarkTests;
+			productReference = 2FB9ECEC2A2F6D5A00E0C317 /* BenchmarkTests */;
+			productType = "com.apple.product-type.tool";
+		};
 		B87574BA2A1E078300BCC732 /* TestingGrounds */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B87574E52A1E078500BCC732 /* Build configuration list for PBXNativeTarget "TestingGrounds" */;
@@ -166,6 +231,7 @@
 				B89FF0FD2A21068C0073E600 /* FeatureApi */,
 				B89FF0FF2A21068C0073E600 /* FeatureImpl */,
 				B89FF1012A21068C0073E600 /* Log */,
+				2FB9ECF42A2F6D7E00E0C317 /* Benchmark */,
 			);
 			productName = TestingGrounds;
 			productReference = B87574BB2A1E078300BCC732 /* TestingGrounds.app */;
@@ -219,6 +285,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					2FB9ECEB2A2F6D5A00E0C317 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					B87574BA2A1E078300BCC732 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -242,6 +311,7 @@
 			);
 			mainGroup = B87574B22A1E078300BCC732;
 			packageReferences = (
+				2FB9ECF32A2F6D7E00E0C317 /* XCRemoteSwiftPackageReference "swift-benchmark" */,
 			);
 			productRefGroup = B87574BC2A1E078300BCC732 /* Products */;
 			projectDirPath = "";
@@ -250,6 +320,7 @@
 				B87574BA2A1E078300BCC732 /* TestingGrounds */,
 				B87574D02A1E078500BCC732 /* TestingGroundsTests */,
 				B87574DA2A1E078500BCC732 /* TestingGroundsUITests */,
+				2FB9ECEB2A2F6D5A00E0C317 /* BenchmarkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +352,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2FB9ECE82A2F6D5A00E0C317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB9ECEF2A2F6D5A00E0C317 /* main.swift in Sources */,
+				2FB9ECF72A2F6DCA00E0C317 /* MyProtocol.swift in Sources */,
+				2FB9ECF92A2F6DE200E0C317 /* MyImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B87574B72A1E078300BCC732 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +416,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2FB9ECF02A2F6D5A00E0C317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2FB9ECF12A2F6D5A00E0C317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		B87574E32A1E078500BCC732 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -574,6 +677,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2FB9ECF22A2F6D5A00E0C317 /* Build configuration list for PBXNativeTarget "BenchmarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB9ECF02A2F6D5A00E0C317 /* Debug */,
+				2FB9ECF12A2F6D5A00E0C317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B87574B62A1E078300BCC732 /* Build configuration list for PBXProject "TestingGrounds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -612,7 +724,32 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		2FB9ECF32A2F6D7E00E0C317 /* XCRemoteSwiftPackageReference "swift-benchmark" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/swift-benchmark";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		2FB9ECF42A2F6D7E00E0C317 /* Benchmark */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FB9ECF32A2F6D7E00E0C317 /* XCRemoteSwiftPackageReference "swift-benchmark" */;
+			productName = Benchmark;
+		};
+		2FB9ECFA2A2F6E3700E0C317 /* Benchmark */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FB9ECF32A2F6D7E00E0C317 /* XCRemoteSwiftPackageReference "swift-benchmark" */;
+			productName = Benchmark;
+		};
+		2FB9ECFC2A2F6E4700E0C317 /* DI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DI;
+		};
 		B89FF0F92A21068C0073E600 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;
