@@ -9,14 +9,20 @@ benchmark("Register 10_000") {
 
     for _ in 1...10_000 {
         DIManager.register((any MyProtocol).self) { _ in
-            let myDep = DIManager.resolve(MyDep.self)
+            let myDepA = DIManager.resolve(MyDep.self)
+            let myDepB = DIManager.resolve(MyDep.self)
+            let myDepC = DIManager.resolve(MyDep.self)
+            let myDepD = DIManager.resolve(MyDep.self)
+            let myDepE = DIManager.resolve(MyDep.self)
+            let myDepF = DIManager.resolve(MyDep.self)
+
             return MyImpl(
-                depA: myDep,
-                depB: myDep,
-                depC: myDep,
-                depD: myDep,
-                depE: myDep,
-                depF: myDep
+                depA: myDepA,
+                depB: myDepB,
+                depC: myDepC,
+                depD: myDepD,
+                depE: myDepE,
+                depF: myDepF
             )
         }
     }
@@ -25,14 +31,20 @@ benchmark("Register 10_000") {
 benchmark("Register 100_000") {
     for _ in 1...100_000 {
         DIManager.register((any MyProtocol).self) { _ in
-            let myDep = DIManager.resolve(MyDep.self)
+            let myDepA = DIManager.resolve(MyDep.self)
+            let myDepB = DIManager.resolve(MyDep.self)
+            let myDepC = DIManager.resolve(MyDep.self)
+            let myDepD = DIManager.resolve(MyDep.self)
+            let myDepE = DIManager.resolve(MyDep.self)
+            let myDepF = DIManager.resolve(MyDep.self)
+
             return MyImpl(
-                depA: myDep,
-                depB: myDep,
-                depC: myDep,
-                depD: myDep,
-                depE: myDep,
-                depF: myDep
+                depA: myDepA,
+                depB: myDepB,
+                depC: myDepC,
+                depD: myDepD,
+                depE: myDepE,
+                depF: myDepF
             )
         }
     }
