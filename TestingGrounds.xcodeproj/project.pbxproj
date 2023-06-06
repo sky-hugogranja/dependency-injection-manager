@@ -13,6 +13,7 @@
 		2FB9ECF92A2F6DE200E0C317 /* MyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9ECF82A2F6DE200E0C317 /* MyImpl.swift */; };
 		2FB9ECFB2A2F6E3700E0C317 /* Benchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB9ECFA2A2F6E3700E0C317 /* Benchmark */; };
 		2FB9ECFD2A2F6E4700E0C317 /* DI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB9ECFC2A2F6E4700E0C317 /* DI */; };
+		2FB9ECFF2A2F76FC00E0C317 /* MyDep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9ECFE2A2F76FC00E0C317 /* MyDep.swift */; };
 		B87574BF2A1E078300BCC732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87574BE2A1E078300BCC732 /* AppDelegate.swift */; };
 		B87574C12A1E078300BCC732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87574C02A1E078300BCC732 /* SceneDelegate.swift */; };
 		B87574C32A1E078300BCC732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87574C22A1E078300BCC732 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		2FB9ECEE2A2F6D5A00E0C317 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2FB9ECF62A2F6DCA00E0C317 /* MyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProtocol.swift; sourceTree = "<group>"; };
 		2FB9ECF82A2F6DE200E0C317 /* MyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImpl.swift; sourceTree = "<group>"; };
+		2FB9ECFE2A2F76FC00E0C317 /* MyDep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDep.swift; sourceTree = "<group>"; };
 		B87574BB2A1E078300BCC732 /* TestingGrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingGrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87574BE2A1E078300BCC732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B87574C02A1E078300BCC732 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				2FB9ECEE2A2F6D5A00E0C317 /* main.swift */,
 				2FB9ECF62A2F6DCA00E0C317 /* MyProtocol.swift */,
 				2FB9ECF82A2F6DE200E0C317 /* MyImpl.swift */,
+				2FB9ECFE2A2F76FC00E0C317 /* MyDep.swift */,
 			);
 			path = BenchmarkTests;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB9ECEF2A2F6D5A00E0C317 /* main.swift in Sources */,
+				2FB9ECFF2A2F76FC00E0C317 /* MyDep.swift in Sources */,
 				2FB9ECF72A2F6DCA00E0C317 /* MyProtocol.swift in Sources */,
 				2FB9ECF92A2F6DE200E0C317 /* MyImpl.swift in Sources */,
 			);
